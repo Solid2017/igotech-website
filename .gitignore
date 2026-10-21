@@ -1,0 +1,36 @@
+# Fichier de configuration (contient les identifiants DB et clés secrètes)
+includes/config.php
+
+# Fichiers de débogage
+debug.php
+
+# Archives de déploiement
+*.zip
+*.tar.gz
+*.tar
+
+# Uploads utilisateurs (assets/uploads/)
+assets/uploads/
+assets/videos/
+
+# Projet Remotion séparé (a son propre dépôt)
+igotech-chart/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+error_log
+
+# PHP
+*.php.bak

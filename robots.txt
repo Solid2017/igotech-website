@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /includes/
+Disallow: /assets/vendor/
+
+Sitemap: https://igotech.tech/sitemap.php
