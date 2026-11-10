@@ -9,9 +9,27 @@ debug.php
 *.tar.gz
 *.tar
 
-# Uploads utilisateurs (assets/uploads/)
+# Uploads utilisateurs et médias volumineux
 assets/uploads/
 assets/videos/
+
+# Fichiers binaires d'assets (images, fonts) — uploadés via FTP
+# La structure des dossiers est suivie via .gitkeep
+assets/images/*.png
+assets/images/*.jpg
+assets/images/*.jpeg
+assets/images/*.gif
+assets/images/*.ico
+assets/images/*.webp
+assets/images/team/*.jpg
+assets/images/team/*.png
+assets/images/partners/*.png
+assets/images/partners/*.jpg
+# Librairies vendor — trop lourdes pour git (télécharger depuis CDN)
+assets/vendor/fontawesome/css/*.css
+assets/vendor/fontawesome/webfonts/
+assets/vendor/aos/*.css
+assets/vendor/aos/*.js
 
 # Projet Remotion séparé (a son propre dépôt)
 igotech-chart/
