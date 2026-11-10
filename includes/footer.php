@@ -127,8 +127,8 @@ $adresse    = setting('site_adresse',   "Quartier Amtoukoui, N'Djamena, Tchad");
 </a>
 
 <!-- ================ SCRIPTS ================ -->
-<!-- AOS (local) -->
-<script src="/assets/vendor/aos/aos.js"></script>
+<!-- AOS (CDN) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous"></script>
 <!-- Main JS -->
 <script src="/assets/js/main.js?v=1.0"></script>
 

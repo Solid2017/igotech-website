@@ -27,7 +27,7 @@ $activeMenu ??= 'dashboard';
   <link rel="icon"             type="image/png" sizes="16x16" href="/assets/images/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180"               href="/assets/images/apple-touch-icon.png">
   <meta name="theme-color" content="#1414D4">
-  <link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/admin.css">

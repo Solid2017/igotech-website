@@ -76,11 +76,11 @@ $activePage ??= '';
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <!-- -- FontAwesome (local) -- -->
-  <link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css">
+  <!-- -- FontAwesome (CDN) -- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
 
-  <!-- -- AOS (local) -- -->
-  <link rel="stylesheet" href="/assets/vendor/aos/aos.css">
+  <!-- -- AOS (CDN) -- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous">
 
   <!-- -- CSS principal -- -->
   <link rel="stylesheet" href="/assets/css/style.css?v=1.0">
