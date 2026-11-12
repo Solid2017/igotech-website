@@ -59,6 +59,57 @@ require_once 'includes/header.php';
   </div>
 </section>
 
+<!-- ======== IGOTECH IA BANNER ======== -->
+<section class="section-sm" style="background:linear-gradient(135deg,#0D0DAA 0%,#1414D4 55%,#3535E8 100%);overflow:hidden;position:relative">
+  <!-- Cercles déco -->
+  <span style="position:absolute;width:320px;height:320px;border-radius:50%;border:1px solid rgba(255,255,255,.08);top:-80px;right:-80px;pointer-events:none"></span>
+  <span style="position:absolute;width:200px;height:200px;border-radius:50%;border:1px solid rgba(255,255,255,.06);bottom:-60px;left:60px;pointer-events:none"></span>
+
+  <div class="container" style="position:relative;z-index:1">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+
+      <div style="display:flex;align-items:center;gap:20px;flex:1;min-width:260px">
+        <!-- Icône IA -->
+        <div style="width:64px;height:64px;border-radius:16px;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;backdrop-filter:blur(8px)">
+          <i class="fas fa-brain" style="font-size:1.8rem;color:#fff"></i>
+        </div>
+        <div>
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+            <span style="font-size:1.3rem;font-weight:800;color:#fff;letter-spacing:-.01em">IgoTech IA</span>
+            <span style="background:#D0000E;color:#fff;font-size:.65rem;font-weight:700;padding:2px 8px;border-radius:20px;text-transform:uppercase;letter-spacing:.04em"><?= t('Nouveau','New') ?></span>
+          </div>
+          <p style="color:rgba(255,255,255,.82);font-size:.92rem;margin:0;line-height:1.4">
+            <?= t(
+              'Votre assistant IA personnel pour apprendre, pratiquer et progresser en technologie.',
+              'Your personal AI assistant to learn, practice and grow in technology.'
+            ) ?>
+          </p>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+        <div style="text-align:center;padding:8px 16px;background:rgba(255,255,255,.1);border-radius:10px;min-width:80px">
+          <div style="font-size:1.2rem;font-weight:800;color:#fff">24/7</div>
+          <div style="font-size:.7rem;color:rgba(255,255,255,.7)"><?= t('Disponible','Available') ?></div>
+        </div>
+        <div style="text-align:center;padding:8px 16px;background:rgba(255,255,255,.1);border-radius:10px;min-width:80px">
+          <div style="font-size:1.2rem;font-weight:800;color:#fff">FR/EN</div>
+          <div style="font-size:.7rem;color:rgba(255,255,255,.7)"><?= t('Bilingue','Bilingual') ?></div>
+        </div>
+        <a href="https://ia.igotech.tech" target="_blank" rel="noopener"
+           style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#1414D4;font-weight:700;font-size:.92rem;padding:12px 24px;border-radius:50px;text-decoration:none;white-space:nowrap;transition:transform .2s,box-shadow .2s;box-shadow:0 4px 20px rgba(0,0,0,.2)"
+           onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 28px rgba(0,0,0,.3)'"
+           onmouseout="this.style.transform='';this.style.boxShadow='0 4px 20px rgba(0,0,0,.2)'">
+          <i class="fas fa-rocket"></i>
+          <?= t('Accéder à IgoTech IA', 'Access IgoTech AI') ?>
+          <i class="fas fa-external-link-alt" style="font-size:.75rem;opacity:.7"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ======== CATALOGUE ======== -->
 <section class="section" aria-labelledby="catalogue-title">
   <div class="container">
