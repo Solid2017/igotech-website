@@ -115,17 +115,31 @@ require_once 'includes/header.php';
 </section>
 
 <!-- ======== PARTENAIRES ======== -->
+<?php
+try {
+    $partners_list = db()->query("SELECT * FROM partenaires WHERE actif=1 ORDER BY ordre ASC, id ASC")->fetchAll();
+} catch (Exception $e) {
+    $partners_list = [];
+}
+?>
+<?php if (!empty($partners_list)): ?>
 <section class="partners-section" aria-label="<?= t('Ils nous font confiance', 'They trust us') ?>">
   <div class="container">
     <p class="partners-title"><?= t('Ils nous font confiance', 'They trust us') ?></p>
     <div class="partners-logos">
-      <img src="/assets/images/partners/partner1.png" alt="Archidiocèse de N'Djamena" loading="lazy">
-      <img src="/assets/images/partners/partner2.png" alt="Kotar Ya Marie" loading="lazy">
-      <img src="/assets/images/partners/partner3.png" alt="Partenaire 3" loading="lazy">
-      <img src="/assets/images/partners/partner4.png" alt="Partenaire 4" loading="lazy">
+      <?php foreach ($partners_list as $p): ?>
+        <?php if ($p['lien']): ?>
+          <a href="<?= htmlspecialchars($p['lien']) ?>" target="_blank" rel="noopener" title="<?= htmlspecialchars($p['nom']) ?>">
+        <?php endif; ?>
+        <img src="/assets/uploads/partners/<?= htmlspecialchars($p['logo']) ?>"
+             alt="<?= htmlspecialchars($p['nom']) ?>"
+             loading="lazy">
+        <?php if ($p['lien']): ?></a><?php endif; ?>
+      <?php endforeach; ?>
     </div>
   </div>
 </section>
+<?php endif; ?>
 
 <!-- ======== SERVICES ======== -->
 <section class="section bg-light" id="services" aria-labelledby="services-title">

@@ -120,6 +120,12 @@ $activeMenu ??= 'dashboard';
         </a>
       </li>
 
+      <li class="<?= $activeMenu === 'partners' ? 'active' : '' ?>">
+        <a href="/admin/partners.php">
+          <i class="fas fa-handshake"></i> <span>Partenaires</span>
+        </a>
+      </li>
+
       <li class="nav-section">Outils</li>
 
       <li class="<?= $activeMenu === 'chatbot' ? 'active' : '' ?>">
